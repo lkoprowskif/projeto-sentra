@@ -5,9 +5,171 @@ body {
     background: var(--cor-bg);
     color: var(--cor-branco);
     font-size: 16px;
-    overflow: hidden;
+}
+/*bg*/
+.bg-contact {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.60);
+}
+/*contato informações*/
+.left-side {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 150px 50px;
+}
+/*TAG*/
+.header-tag {
+    color: var(--laranja-primario);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+}
+/*Barra*/
+.header-tag::after {
+    content: "";
+    flex: 1; /*alinha o after e a tag lado a lado*/
+    height: 1px; 
+    background: linear-gradient(to right,
+    rgba(255, 94, 0, 0.45),
+    rgba(255, 94, 0, 0.05));
+}
+/*Titulo*/
+.header-title {
+    margin-top: 20px;
+    font-size: 55px;
+    font-weight: 400;
+}
+.header-title--highlight {
+    display: block;
+    color: var(--laranja-primario);
+    text-shadow: 0 0 30px rgba(255, 94, 0, 0.2);
+    line-height: 1;
+}
+/*Subtitulo*/
+.header-subtitle {
+    font-size: 18px;
+    width: 50%;
+    margin-top: 15px;
+    color: var(--cor-cinza);
+
+    position: relative;
+    padding-bottom: 30px;
+}
+/*Barra*/
+.header-subtitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(to right,
+    rgba(255, 94, 0, 0.45),
+    rgba(255, 94, 0, 0.05));
+}
+/*Formas de contato*/
+.contacts {
+    margin-top: 30px;
+}
+.contact-title {
+    color: var(--laranja-primario);
+    font-size: 22px;
+    text-transform: uppercase;
+    text-shadow: 0 0 30px rgba(255, 94, 0, 0.2);
+}
+.contact-icon {
+    margin-right: 15px;
+    font-size: 22px;
+}
+.contact-subtitle {
+    margin: 12px 0;
+    font-size: 18px;
+}
+.contact-subtitle--link {
+    color: var(--laranja-primario);
+}
+/*Card*/
+.contact-card {
+    background: rgba(15, 15, 15, 0.2);
+
+    margin-top: 30px;
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    text-align: left;
+
+    border: 1px solid rgba(255, 94, 0, 0.2);
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
 }
 
+.contact-card:hover {
+    box-shadow: 0 0 5px rgba(255, 94, 0, 0.2);
+    transition: 0.3s ease;
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.card-icon {
+    font-size: 30px;
+    color: var(--laranja-primario);
+    text-shadow: 0 0 10px rgba(255, 94, 0, 0.2);
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+}
+
+.card-subtitle {
+    color: var(--cor-cinza);
+    margin: 5px 0 0 0;
+}
+.card-subtitle {
+    color: var(--cor-cinza);
+}
+.card-text {
+    flex-direction: column;
+    text-align: center;
+}
+/*form*/
+.form {
+    color: var(--cor-branco);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 300px;
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    margin: 40px 0 0 80px;
+    align-items: flex-end;
+    justify-content: center;
+}
 /*footer*/
 .footer {
     width: 100%;
@@ -18,7 +180,6 @@ body {
     background: var(--laranja-primario);
     position: relative;
     z-index: 20;
-
 }
 
 .text-footer {
