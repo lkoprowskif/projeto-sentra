@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/pag-demonstracao.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <script src="../js/pag-demonstracao.js" defer></script>
+    <script src="../js/navbar.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <img src="../assets/logotipo-sentra.webp" alt="Logotipo Sentra" class="logo">
         </div>
 
-        <nav>
+        <nav class="navbar-links" id="navbarLinks">
             <a href="../index.html" class="nav-link">Página Inicial</a>
             <a href="./pag-sobre.html" class="nav-link">Sobre</a>
             <a href="./pag-faq.html" class="nav-link">FAQ</a>
@@ -27,6 +28,7 @@
         </nav>
 
         <a href="./pag-demonstracao.html" class="btn-nav btn-nav--highlight">Demonstração</a>
+        <button class="hamburger" id="hamburger"></button>
     </header>
     <!-- conteudo esquerda -->
     <main class="demo-container">
